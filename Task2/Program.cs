@@ -7,18 +7,16 @@ Console.Write("Введите число: b = ");
 number2 = Convert.ToInt32(Console.ReadLine());
 
 int max = number1;
+int min = number2;
 
 
-Console.Write("a = ");
-Console.WriteLine(number1);
-Console.Write("b = ");
-Console.WriteLine(number2);
+if (number2 > max) max = number2; min = number1;
 
-if (number2 > max) max = number2;
-{
-    Console.Write("Большое число: ");
-    Console.WriteLine(max);
-}
+Console.Write("Большое число: ");
+Console.WriteLine(max);
+Console.Write("Меньшее число: ");
+Console.WriteLine(min);
+
 
 
 
