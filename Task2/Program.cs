@@ -10,7 +10,10 @@ int max = number1;
 int min = number2;
 
 
-if (number2 > max) max = number2; min = number1;
+if (number2 > max)
+{
+    max = number2; min = number1;
+}
 
 Console.Write("Большое число: ");
 Console.WriteLine(max);
@@ -20,11 +23,3 @@ Console.WriteLine(min);
 
 
 
-
-//int number = new int();
-//Console.WriteLine("Введите число");
-//number = Convert.ToInt32(Console.ReadLine());
-
-//number = number * number;
-
-//Console.WriteLine(number);
